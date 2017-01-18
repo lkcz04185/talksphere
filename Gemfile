@@ -5,8 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.9'
 # Use postgresql as the database for Active Record
 gem 'pg'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+# Use SCSS for stylesheets - descoped to prevent errors another gem included below
+# gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
@@ -37,6 +37,13 @@ gem 'rails_12factor', group: :production
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
 end
+
+# Gems for the older version of Bootstrap to avoid issues
+gem 'bootstrap-sass', '~> 3.3.5.1'
+
+gem 'sprockets', '2.11.0'
+
+gem 'sass-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

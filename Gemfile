@@ -26,6 +26,13 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+# Installing this gem enables two great things.
+# First off, assets are served in production in a more efficient style which speeds up your page load times.
+# Secondly, this gem allows you to see errors in your Heroku Logs 
+# that provide useful information in troubleshooting rather than the generic error messages
+# that are usually displayed.
+gem 'rails_12factor', group: :production
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

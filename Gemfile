@@ -33,6 +33,11 @@ gem 'spring',        group: :development
 # that are usually displayed.
 gem 'rails_12factor', group: :production
 
+# Rspec is a bit more commonly used in industry to write tests.
+group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
+end
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

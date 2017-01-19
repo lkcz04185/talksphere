@@ -45,6 +45,10 @@ gem 'sprockets', '2.11.0'
 
 gem 'sass-rails'
 
+# SimpleForm gem to submit data to the db
+gem 'simple_form'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

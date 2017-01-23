@@ -34,8 +34,10 @@ gem 'spring',        group: :development
 gem 'rails_12factor', group: :production
 
 # Rspec is a bit more commonly used in industry to write tests.
+ # FactoryGirl gem to insert this dummy data into the database.
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
+  gem 'factory_girl_rails', '~> 4.0'
 end
 
 # Gems for the older version of Bootstrap to avoid issues

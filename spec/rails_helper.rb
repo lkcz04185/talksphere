@@ -27,6 +27,11 @@ require 'rspec/rails'
 ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
+
+  # If you're using RSpec, you can put the following inside a file named spec/support/devise.rb 
+  # or in your spec/spec_helper.rb (or spec/rails_helper.rb if you are using rspec-rails):
+  config.include Devise::TestHelpers, type: :controller
+ 
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 

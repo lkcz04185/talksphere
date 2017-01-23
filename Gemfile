@@ -48,6 +48,7 @@ gem 'sass-rails'
 # SimpleForm gem to submit data to the db
 gem 'simple_form'
 
+gem 'devise'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

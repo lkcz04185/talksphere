@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'grams#index'
-  resources :grams, only: [:new, :create, :show, :edit, :update]
+  resources :grams, only: [:new, :create, :show, :edit, :update, :destroy]
   
 
   # Example of regular route:

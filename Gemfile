@@ -52,6 +52,12 @@ gem 'simple_form'
 
 gem 'devise'
 
+# This gem provides a simple and extremely flexible way to upload files 
+# from Ruby applications. It works well with Rack based web applications,
+# such as Ruby on Rails.
+gem 'carrierwave', '~> 1.0'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

@@ -57,6 +57,15 @@ gem 'devise'
 # such as Ruby on Rails.
 gem 'carrierwave', '~> 1.0'
 
+# Figaro was written to make it easy to securely configure Rails applications.
+# Configuration values often include sensitive information. 
+# Figaro strives to be secure by default by encouraging a convention 
+# that keeps configuration out of Git.
+gem 'figaro'
+
+# First in order for carrierwave to be able to communicate with Amazon S3, 
+# it needs to have the fog gem in the project. 
+gem 'fog'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
